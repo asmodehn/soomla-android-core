@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+    }
+}
+apply plugin: 'com.android.library'
+android {
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+    }
+
+    compileSdkVersion 20
+    buildToolsVersion '20'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        minSdkVersion 10
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies{
+    compile files('libs/square-otto-1.3.2.jar')
+}
