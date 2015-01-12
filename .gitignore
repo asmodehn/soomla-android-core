@@ -26,13 +26,14 @@ proguard/
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
 ## Directory-based project format
-#.idea/
+.idea/
 # if you remove the above rule, at least ignore user-specific stuff:
 **/.idea/workspace.xml
 **/.idea/tasks.xml
 **/.idea/misc.xml
 **/.idea/dictionaries
 .idea/libraries
+**/*.iml
 
 ## Additional for IntelliJ
 out/
